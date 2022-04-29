@@ -1,3 +1,4 @@
+// if else statements
 const year = 2022;
 const myAge = 15;
 const elligible = year - myAge;
