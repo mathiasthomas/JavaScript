@@ -1,14 +1,3 @@
-'use strict';
-
-
-function logger() {
-    console.log('my name is tom');
-
-}
-logger();//calling,running incoking functions
-
-//functions example
-
 function fruitProcessor(apples, oranges) {
     const juice = `juice with ${apples} apples and ${oranges} oranges`;
     return juice;
