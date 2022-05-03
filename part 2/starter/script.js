@@ -61,7 +61,7 @@ const yearsUntilRetirement = (birthYear, firstname) => {
 }
 console.log(yearsUntilRetirement(1994, 'Tommy'));
 console.log(yearsUntilRetirement(1997, 'Fidelis'));
-*/
+
 
 
 // calling funcs from other funcs
@@ -102,17 +102,61 @@ console.log(yearsUntilRetirement(1997, 'Fidelis'));
 
 // console.log(yearsUntilRetirement(1994, 'thomas'));
 // console.log(yearsUntilRetirement(1950, 'fidelis'));
+*/
+//Arrays
+//creating Arrays
+// const friends = ['ben', 'fide', 'mose',];
+// //or
+// const friendss = new Array('benlee', 'fidelee', 'maxelee');
+// console.log(friends, friendss);
+// //retriev array
+// console.log(friends[2]);
+// //find legth of array
 
-//function challenge
-//ex2
-const calcEvarage = (score1, score2, score3) => {
-    const evarageScore = (score1 + score2 + score3) / 3;
-    //return retirement;
-    return evarageScore;
-}
-console.log(calcEvarage(44, 23, 71));
-console.log(calcEvarage(65, 54, 49));
+// console.log(friends.length - 1);
+// //replace arrays
+// friends[2] = 'richard';
+// console.log(friends);
 
-const checkWinner = (avgDolphins, avgKoalas){
+// //arrays can old different data types
 
-}
+// const firstname = 'thomas';
+// const thomas = [firstname, 'mutavi', 2022 - 1994];
+// console.log(thomas);
+
+// //exercise
+
+// const calcAge = function (birthYear) {
+//     return 2022 - birthYear;
+// }
+// const yearz = new Array(1990, 1967, 2002, 2010, 2018);
+// const agez = calcAge(yearz[0]);
+// const agez1 = calcAge(yearz[1]);
+// const agez2 = calcAge(yearz[2]);
+// console.log(agez, agez1, agez2);
+
+
+//Basic Array Operator (Methods)
+//Push -> add values at the end of an array
+const friends = ['ben', 'fide', 'mose',];
+const newLength = friends.push('sam');
+console.log(friends);
+console.log(newLength);
+//unshif ->add value tyo the begginng of an array
+friends.unshift('john');
+console.log(friends);
+//pop removes last element
+//pop also returns the removed evalue
+friends.pop();
+console.log(friends);
+//shift
+//removed first element of an array
+friends.shift();
+console.log(friends);
+
+//find index of eleemnt in array
+console.log(friends.indexOf('fide'));
+//find if an elemenbt is in an Array
+console.log(friends.includes('bob'));//returns true or false
+console.log(friends.includes('fide'));
+
