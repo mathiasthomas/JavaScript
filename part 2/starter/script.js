@@ -103,6 +103,8 @@ console.log(yearsUntilRetirement(1997, 'Fidelis'));
 // console.log(yearsUntilRetirement(1994, 'thomas'));
 // console.log(yearsUntilRetirement(1950, 'fidelis'));
 */
+
+/*
 //Arrays
 //creating Arrays
 // const friends = ['ben', 'fide', 'mose',];
@@ -159,4 +161,13 @@ console.log(friends.indexOf('fide'));
 //find if an elemenbt is in an Array
 console.log(friends.includes('bob'));//returns true or false
 console.log(friends.includes('fide'));
+*/
 
+//objects
+const Cars = {
+    name: 'F 150',
+    models: 'ford',
+    year: '2022'
+}
+console.log(Cars.models);//accsesing object parameters using dot notation
+console.log(Cars['year']);//accessing objects parameters using bracket notation
