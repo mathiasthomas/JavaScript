@@ -238,19 +238,160 @@ markMiller.calcBmi();
 johnSmith.calcBmi();
 console.log(markMiller.Bmi, johnSmith.Bmi);
 //console.log(johnSmith.calcBmi());
-//console.log(`${markMiller.fullName}'s   ${markMiller.calcBmi()} BMI is higher than 
+//console.log(`${markMiller.fullName}'s   ${markMiller.calcBmi()} BMI is higher than
 //${johnSmith.fullName}'s ${johnSmith.calcBmi()}`);
 if (markMiller.Bmi > johnSmith.Bmi) {
-    console.log(`${markMiller.fullName}'s ${markMiller.Bmi} BMI is higher than 
+    console.log(`${markMiller.fullName}'s ${markMiller.Bmi} BMI is higher than
     ${johnSmith.fullName}'s ${johnSmith.Bmi}`);
 } else {
-    console.log(`${johnSmith.fullName}'s ${johnSmith.Bmi} BMI is higher than 
+    console.log(`${johnSmith.fullName}'s ${johnSmith.Bmi} BMI is higher than
     ${markMiller.fullName}'s ${markMiller.Bmi}`);
 }
 */
 
 
 //for Loop
-for (let rep = 4; rep <= 10; rep++) {
-    console.log(`lifting weights repetiotion ${rep}`);
+//ex1
+// for (let rep = 4; rep <= 10; rep++) {
+//     console.log(`lifting weights repetiotion ${rep}`);
+// }
+// //ex 2 from code camp
+// // Setup
+// const myArray = [];
+// for (let i = 0; i <= 5; i++) {
+//     myArray.push(i);
+// }
+// console.log(myArray);
+
+//looping through arrays
+// const tomArray = [
+//     'tomas',
+//     'mutavi',
+//     2022 - 1994,
+//     'developer',
+//     ['dan', 'matheka', 'sahddy'],
+//     true
+// ]
+
+
+// const types = [
+
+// ];
+// for (let i = 0; i < tomArray.length; i++) {
+//     //reading tomArray array
+//     console.log(tomArray[i], typeof tomArray[i]);
+//     //filling types array
+//     // types[i] = typeof tomArray[i];
+//     types.push(typeof tomArray[i]);
+
+// }
+// console.log(types);
+
+
+//example 3
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+//continue and break
+//continue
+// console.log('only strings')
+// for (let i = 0; i < tomArray.length; i++) {
+//     if (typeof tomArray[i] !== 'string') continue;
+//     console.log(tomArray[i], typeof tomArray[i]);
+// }
+//breaks
+// console.log('Break With Number');
+
+// for (let i = 0; i < tomArray.length; i++) {
+//     if (typeof tomArray[i] == 'number') break;
+//     console.log(tomArray[i], typeof tomArray[i]);
+
+// }
+/*
+//backward looping of array
+//4,3----0
+const tomArray = [
+    'tomas',
+    'mutavi',
+    2022 - 1994,
+    'developer',
+    ['dan', 'matheka', 'sahddy']
+]
+for (let i = tomArray.length - 1; i >= 0; i--) {
+    console.log(tomArray[i]);
 }
+//loop inside loop
+for (let ex = 1; ex < 4; ex++) {
+    console.log(`------start exercixe ${ex}`);
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`lifting weights repetition ${rep}`);
+    }
+}
+*/
+// while loop
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`lifting weights repetition ${rep}`);
+// }
+
+// let rep = 1;//counter variable
+// while (rep <= 10) {
+//     console.log(` while lifting weights repetition ${rep}`);
+//     rep++;
+// }
+/*
+//example 2
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+while (dice !== 6) {
+    console.log(`you rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice == 6) console.log('loop ended');
+}
+*/
+//finall challenge
+
+//calcTipFunction
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+const bills = [
+    22,
+    295,
+    176,
+    440,
+    37,
+    105,
+    10,
+    1100,
+    86,
+    52
+
+];
+const tips = [
+
+];
+const totals = [
+
+];
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+    console.log(bills, tips, bills);
+}
+
+const calcEvarage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+
+        //sum = sum = arr[i];
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+console.log(calcEvarage([2, 4, 6]));
+console.log(calcEvarage(totals));
