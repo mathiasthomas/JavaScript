@@ -162,7 +162,7 @@ console.log(friends.indexOf('fide'));
 console.log(friends.includes('bob'));//returns true or false
 console.log(friends.includes('fide'));
 */
-
+/*
 //objects
 // const Cars = {
 //     name: 'F 150',
@@ -207,6 +207,9 @@ console.log(Cars.getSummary());
 // console.log(Cars['calcAge'](1991));
 // console.log(Cars.calcAge(2004));
 // console.log(Cars.calcAge());
+*/
+/*
+
 
 //coding challenges 3
 const markMiller = {
@@ -221,7 +224,7 @@ const markMiller = {
 
 }
 
-console.log(markMiller.calcBmi());
+//console.log(markMiller.calcBmi());
 const johnSmith = {
     fullName: 'John Smith',
     mass: 92,
@@ -231,5 +234,17 @@ const johnSmith = {
         return this.Bmi;
     }
 }
-console.log(johnSmith.calcBmi());
-console.log(`${markMiller.fullName}'s   ${markMiller.calcBmi()} BMI is higher than ${johnSmith.fullName}'s ${johnSmith.calcBmi()}`);
+markMiller.calcBmi();
+johnSmith.calcBmi();
+console.log(markMiller.Bmi, johnSmith.Bmi);
+//console.log(johnSmith.calcBmi());
+//console.log(`${markMiller.fullName}'s   ${markMiller.calcBmi()} BMI is higher than 
+//${johnSmith.fullName}'s ${johnSmith.calcBmi()}`);
+if (markMiller.Bmi > johnSmith.Bmi) {
+    console.log(`${markMiller.fullName}'s ${markMiller.Bmi} BMI is higher than 
+    ${johnSmith.fullName}'s ${johnSmith.Bmi}`);
+} else {
+    console.log(`${johnSmith.fullName}'s ${johnSmith.Bmi} BMI is higher than 
+    ${markMiller.fullName}'s ${markMiller.Bmi}`);
+}
+*/
