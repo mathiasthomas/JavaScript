@@ -248,3 +248,9 @@ if (markMiller.Bmi > johnSmith.Bmi) {
     ${markMiller.fullName}'s ${markMiller.Bmi}`);
 }
 */
+
+
+//for Loop
+for (let rep = 4; rep <= 10; rep++) {
+    console.log(`lifting weights repetiotion ${rep}`);
+}
