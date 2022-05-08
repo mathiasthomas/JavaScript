@@ -164,10 +164,72 @@ console.log(friends.includes('fide'));
 */
 
 //objects
+// const Cars = {
+//     name: 'F 150',
+//     models: 'ford',
+//     year: '2022',
+//     hasTurbo:false
+// }
+// console.log(Cars.models);//accsesing object parameters using dot notation
+// console.log(Cars['year']);//accessing objects parameters using bracket notation
+//also
+// const myCarModel = Cars.models;
+// const myCarModelName = Cars['name'];
+// console.log(myCarModel);
+// console.log(myCarModelName);
+
+//objest methods
 const Cars = {
     name: 'F 150',
     models: 'ford',
-    year: '2022'
+    year: 2003,
+    hasTurbo: false,
+    //a function nested in object as a property
+    //any function attached to a object is called a method
+    // calcAge: function (year) {
+    //     return 2022 - year;
+    // }
+    // calcAge: function () {
+    //     return 2022 - this.year;
+    // }
+    calcAge: function () {
+        this.age = 2022 - this.year;
+        return this.age;
+
+    },
+    getSummary: function () {
+        return `${this.name} is ${this.models} model utility vehicle which is ${this.calcAge()} years old and has ${this.hasTurbo ? 'a' : 'no'} turbo.`
+    }
 }
-console.log(Cars.models);//accsesing object parameters using dot notation
-console.log(Cars['year']);//accessing objects parameters using bracket notation
+console.log(Cars.age);
+console.log(Cars.age);
+console.log(Cars.getSummary());
+// console.log(Cars['calcAge'](1991));
+// console.log(Cars.calcAge(2004));
+// console.log(Cars.calcAge());
+
+//coding challenges 3
+const markMiller = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBmi: function () {
+        this.Bmi = markMiller.mass / (markMiller.height * markMiller.height);
+        return this.Bmi;
+    }
+
+
+}
+
+console.log(markMiller.calcBmi());
+const johnSmith = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBmi: function () {
+        this.Bmi = johnSmith.mass / (johnSmith.height * johnSmith.height);
+        return this.Bmi;
+    }
+}
+console.log(johnSmith.calcBmi());
+console.log(`${markMiller.fullName}'s   ${markMiller.calcBmi()} BMI is higher than ${johnSmith.fullName}'s ${johnSmith.calcBmi()}`);
