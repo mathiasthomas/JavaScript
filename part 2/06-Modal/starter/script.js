@@ -12,8 +12,10 @@ const openModal = function () {
 };
 
 for (let i = 0; i < btnsOpenModal.length; i++) {
+  console.log(btnsOpenModal[i].textContent);
   btnsOpenModal[i].addEventListener('click', openModal);
 }
+
 //closeModal Function
 const closeModal = function () {
   model.classList.add('hidden');
